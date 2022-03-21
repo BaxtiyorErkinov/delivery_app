@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useMemo, useState } from 'react';
+import { useSelector } from 'react-redux';
+import './App.scss';
+import Header from './components/Header';
+import MainContainer from './components/MainContainer';
+import MenuContainer from './components/MenuContainer';
 
 function App() {
+  const a = useSelector((state) => state);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <Header />
+      <main>
+        <MainContainer />
+        <div className="rightMenu"></div>
+      </main>
+      <MenuContainer />
     </div>
   );
 }

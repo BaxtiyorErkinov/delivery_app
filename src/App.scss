@@ -1,0 +1,14 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #faf9fb;
+  overflow-x: hidden;
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+main {
+  width: 100%;
+  height: auto;
+  background: #faf9fb;
+}
