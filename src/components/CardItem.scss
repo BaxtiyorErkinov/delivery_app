@@ -1,15 +1,16 @@
 .itemCard {
-  width: 160px;
-  height: 180px;
+  width: 250px;
+  height: 240px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   margin: 10px 0;
+  padding-top: 30px;
   .isFavorite {
     position: absolute;
-    top: 80px;
+    top: 120px;
     right: 10px;
     cursor: pointer;
     .MuiSvgIcon-root {
@@ -24,15 +25,14 @@
     }
   }
   .imgBox {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
     position: absolute;
-    top: -10px;
+    top: 0;
 
     img {
       width: 100%;

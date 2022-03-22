@@ -8,10 +8,12 @@ import CardItem from './CardItem';
 import { useSelector, useDispatch } from 'react-redux';
 import { foodAction } from '../store/actions/foodAction';
 const CardsMenu = () => {
-  // const mainData = useSelector((state) => state.foods);
-  const [mainData, setMainData] = useState(
-    Items.filter((item) => item.itemId === 'burger01'),
-  );
+  const mainData = useSelector((state) => state.foods);
+  // const [mainData, setMainData] = useState(
+  //   Items.filter((item) => item.itemId === 'burger01'),
+  // );
+  console.log(mainData);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const menuCards = document
@@ -27,7 +29,8 @@ const CardsMenu = () => {
   }, [mainData]);
 
   const changeData = (itemId) => {
-    setMainData(Items.filter((item) => item.itemId === itemId));
+    // setMainData(Items.filter((item) => item.itemId === itemId));
+    dispatch(foodAction(itemId));
   };
 
   return (
@@ -50,14 +53,12 @@ const CardsMenu = () => {
       <div className="card__item__container">
         {mainData &&
           mainData.map((item) => (
-            <div key={item.id}>
-              <CardItem
-                imgSrc={item.imgSrc}
-                name={item.name}
-                rating={item.rating}
-                price={item.price}
-              />
-            </div>
+            <CardItem
+              imgSrc={item.imgSrc}
+              name={item.name}
+              rating={item.rating}
+              price={item.price}
+            />
           ))}
       </div>
     </div>
