@@ -1,13 +1,20 @@
 import { AddRounded, Favorite, StarRounded } from '@mui/icons-material';
 import React, { useState } from 'react';
 import './CardItem.scss';
+import { cartAction } from '../store/actions/cartAction';
+import { useDispatch } from 'react-redux';
 
-const CardItem = ({ imgSrc, name, price, rating }) => {
+const CardItem = ({ imgSrc, name, price, rating, id }) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const [currentValue, setCurrentValue] = useState(Math.floor(rating));
+  const dispatch = useDispatch();
 
   const handleClick = (value) => {
     setCurrentValue(value);
+  };
+
+  const addToCart = (id) => {
+    dispatch(cartAction(id));
   };
 
   return (
@@ -35,7 +42,7 @@ const CardItem = ({ imgSrc, name, price, rating }) => {
               {price}
             </h3>
           </div>
-          <i className="addToCart">
+          <i className="addToCart" onClick={() => addToCart(id)}>
             <AddRounded />
           </i>
         </div>

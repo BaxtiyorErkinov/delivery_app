@@ -1,0 +1,80 @@
+.cardGroup {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  .card_logo {
+    position: absolute;
+    width: 60px;
+    top: 30px;
+    right: 30px;
+    height: auto;
+  }
+  .card_chip {
+    position: absolute;
+    width: 40px;
+    top: 50px;
+    left: 30px;
+    height: auto;
+  }
+  .card_number {
+    position: absolute;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    left: 30px;
+    bottom: 60px;
+  }
+  .card_name {
+    position: absolute;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 12px;
+    bottom: 30px;
+    left: 30px;
+  }
+  .card_from {
+    position: absolute;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 12px;
+    bottom: 30px;
+    right: 90px;
+  }
+  .card_to {
+    position: absolute;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    bottom: 30px;
+    right: 30px;
+    font-size: 12px;
+  }
+  .card_ring {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 100vw;
+    background-color: transparent;
+    border: 50px solid rgba($color: #000000, $alpha: 0.1);
+    top: -250px;
+    right: -250px;
+    box-sizing: border-box;
+
+    &::after {
+      position: absolute;
+      content: '';
+      height: 500px;
+      width: 500px;
+      border-radius: 100vw;
+      background-color: transparent;
+      border: 50px solid rgba($color: #000000, $alpha: 0.1);
+      top: 185px;
+      right: -155px;
+      box-sizing: border-box;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { ChevronRightRounded } from '@mui/icons-material';
+import './SubmenuContainer.scss';
 import React from 'react';
 
 const SubmenuContainer = ({ name }) => {

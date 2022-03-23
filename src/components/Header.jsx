@@ -1,5 +1,4 @@
-import React from 'react';
-import {} from '@mui/material';
+import React, { useEffect } from 'react';
 import {
   SearchRounded,
   ShoppingCartRounded,
@@ -9,6 +8,12 @@ import Logo from '../assets/logo.svg';
 import './Header.scss';
 
 const Header = () => {
+  useEffect(() => {
+    const cartToggle = document.querySelector('.shoppingCart');
+    cartToggle.addEventListener('click', () => {
+      document.querySelector('.rightMenu').classList.toggle('active');
+    });
+  }, []);
   return (
     <header>
       <img src={Logo} alt="logo" className="logo" />

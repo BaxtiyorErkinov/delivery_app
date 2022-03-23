@@ -7,6 +7,7 @@ import { Items, MenuItems } from '../data.js';
 import CardItem from './CardItem';
 import { useSelector, useDispatch } from 'react-redux';
 import { foodAction } from '../store/actions/foodAction';
+import { cartUpdateAction } from '../store/actions/cartAction';
 const CardsMenu = () => {
   const mainData = useSelector((state) => state.foods);
   // const [mainData, setMainData] = useState(
@@ -26,7 +27,7 @@ const CardsMenu = () => {
     }
 
     menuCards.forEach((el) => el.addEventListener('click', setActiveMenu));
-  }, [mainData]);
+  }, []);
 
   const changeData = (itemId) => {
     // setMainData(Items.filter((item) => item.itemId === itemId));
@@ -58,6 +59,7 @@ const CardsMenu = () => {
               name={item.name}
               rating={item.rating}
               price={item.price}
+              id={item.id}
             />
           ))}
       </div>

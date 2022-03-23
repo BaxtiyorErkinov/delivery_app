@@ -61,6 +61,7 @@ const Items = [
     name: 'King Burger',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 2,
@@ -69,6 +70,7 @@ const Items = [
     name: 'King Burger',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 3,
@@ -77,6 +79,7 @@ const Items = [
     name: 'King Burger',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 4,
@@ -85,6 +88,7 @@ const Items = [
     name: 'King Burger',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 5,
@@ -93,6 +97,7 @@ const Items = [
     name: 'King Burger',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 6,
@@ -101,6 +106,7 @@ const Items = [
     name: 'King Burger',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 7,
@@ -109,6 +115,7 @@ const Items = [
     name: 'Italiano Pizza',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 8,
@@ -117,6 +124,7 @@ const Items = [
     name: 'Italiano Pizza',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 9,
@@ -125,6 +133,7 @@ const Items = [
     name: 'Italiano Pizza',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 10,
@@ -133,6 +142,7 @@ const Items = [
     name: 'Italiano Pizza',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 11,
@@ -141,6 +151,7 @@ const Items = [
     name: 'Italiano Pizza',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 12,
@@ -149,6 +160,7 @@ const Items = [
     name: 'Italiano Pizza',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 13,
@@ -157,6 +169,7 @@ const Items = [
     name: 'Taco',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 14,
@@ -165,6 +178,7 @@ const Items = [
     name: 'Taco',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 15,
@@ -173,6 +187,7 @@ const Items = [
     name: 'Taco',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 16,
@@ -181,6 +196,7 @@ const Items = [
     name: 'Taco',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 17,
@@ -189,6 +205,7 @@ const Items = [
     name: 'Taco',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 18,
@@ -197,6 +214,7 @@ const Items = [
     name: 'Hot Dog',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 19,
@@ -205,6 +223,7 @@ const Items = [
     name: 'Hot Dog',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 20,
@@ -213,6 +232,7 @@ const Items = [
     name: 'Hot Dog',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 21,
@@ -221,6 +241,7 @@ const Items = [
     name: 'Hot Dog',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 22,
@@ -229,6 +250,7 @@ const Items = [
     name: 'Hot Dog',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 23,
@@ -237,6 +259,7 @@ const Items = [
     name: 'Snack',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 24,
@@ -245,6 +268,7 @@ const Items = [
     name: 'Snack',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 25,
@@ -253,6 +277,7 @@ const Items = [
     name: 'Snack',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 26,
@@ -261,6 +286,7 @@ const Items = [
     name: 'Snack',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 27,
@@ -269,6 +295,7 @@ const Items = [
     name: 'Snack',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 28,
@@ -277,6 +304,7 @@ const Items = [
     name: 'Drink',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 29,
@@ -285,6 +313,7 @@ const Items = [
     name: 'Drink',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 30,
@@ -293,6 +322,7 @@ const Items = [
     name: 'Drink',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 31,
@@ -301,6 +331,7 @@ const Items = [
     name: 'Drink',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 32,
@@ -309,6 +340,7 @@ const Items = [
     name: 'Drink',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
   {
     id: 33,
@@ -317,6 +349,7 @@ const Items = [
     name: 'Drink',
     ratings: 4,
     price: '7.5',
+    count: 1,
   },
 ];
 
