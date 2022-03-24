@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { cartUpdateAction } from './store/actions/cartAction';
 import './App.scss';
@@ -14,15 +14,21 @@ import CartItem from './components/CartItem';
 function App() {
   const cartItems = useSelector((state) => state.cart.cart);
   const [count, setCount] = useState(1);
-  const totalSum = cartItems.reduce(
-    (acc, curr) => acc + +curr.price * curr.count,
-    0,
-  );
+  const [totalSum, setTotalSum] = useState(0);
+
   const dispatch = useDispatch();
 
   const updateData = (id, count) => {
     dispatch(cartUpdateAction(id, count + 1));
   };
+
+  useEffect(() => {
+    const totalSum = cartItems.reduce(
+      (acc, curr) => acc + +curr.price * curr.count,
+      0,
+    );
+    setTotalSum(totalSum);
+  }, [cartItems]);
 
   return (
     <div className="wrapper">

@@ -39,8 +39,10 @@ export const cartReducer = (state = initialState, action) => {
           if (el.id == action.payload.id) {
             return {
               ...el,
-              count: action.payload.count,
+              count: el.count + 1,
             };
+          } else {
+            return el;
           }
         }),
       };
